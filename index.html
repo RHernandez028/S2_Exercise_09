@@ -19,6 +19,7 @@
    <title>Red Ball Survey</title>
    <link href="rb_reset.css" rel="stylesheet" />
    <link href="rb_styles.css" rel="stylesheet" />
+   <link rel="stylesheet" href="rb_forms.css" />
    <script src="rb_formsubmit.js"></script>
 
 </head>
@@ -92,6 +93,17 @@
             <input name="custEmail" id="mail" type="email" />
           </div>
 
+        <div class="formRow">
+              <label for="info">Where did your hear about us <br>(selected all that apply)</label>
+              <select name="infoSrc" id="info" size="5" multiple>
+                  <option value="internet">Internet</option>
+                  <option value="mag">Magazine</option>
+                  <option value="news">News</option>
+                  <option value="word">Word</option>
+                  <option value="other">Other</option>
+              </select>
+        </div>
+
           <div class="formRow">
               <label for="dish">What's your favorite dish?</label>
               <input name="favDish" id="dish" type="text" list="dishType" />
@@ -105,6 +117,7 @@
               </datalist>
           </div>
 
+          
 
           <div class="formRow">
               <label for="dineSpin">How many times do you dine out per month?</label>
@@ -120,17 +133,17 @@
             <legend>Share Your Experiene at Red Ball Pizza</legend>
 
             <div class="formRow">
-                <label for="visit">Date of visit</label>
+                <label for="visit">Date of Visit</label>
                 <input type="date" name="visitDate" id="visit" />
             </div>
 
             <div class="formRow">
-                <label for="visit">Order type</label>
+                <label for="order">Order Type</label>
                 <select name="orderType" id="order">
                     <option value="order1">Carry Out</option>
                     <option value="order2">Delivery</option>
                     <option value="order3" selected>Dine in</option>
-                    <option value="order4">Take n' bake</option>
+                    <option value="order4">Take 'n bake</option>
                 </select>
             </div>
 
@@ -170,10 +183,11 @@
                 <input type="range" name="serviceRate" id="rangeBox" value="5" step="1" min="0" max="10">
                 10
             </div>
+            
 
 
-            <label for="commBox">Tell is more about your experiences!</label>
-            <textarea name="custExp" id="commBoc" ></textarea>
+            <label for="commBox">Tell us more about your experiences!</label>
+            <textarea name="custExp" id="commBox"></textarea>
 
           </fieldset>
       </form>
